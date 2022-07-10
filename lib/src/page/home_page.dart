@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
 
@@ -21,20 +20,29 @@ class _HomePageState extends State<HomePage> {
             const Text('MasterClass \nAtividade 01',
                 style: TextStyle(fontSize: 25)),
             const SizedBox(height: 100),
-           ElevatedButton(
+            ElevatedButton(
               onPressed: () {
                 Navigator.of(context).pushNamed('/moneyControl');
               },
-              style: ElevatedButton.styleFrom(fixedSize:const Size(200,50) ),
-              child: const Text('Money Control'),
+              style: ElevatedButton.styleFrom(fixedSize: const Size(300, 50)),
+              child: const Text('Atv 01 - Money Control'),
             ),
             const SizedBox(height: 20),
             ElevatedButton(
-                onPressed: () {
-                  Navigator.of(context).pushNamed('/tinder');
-                },
-                style: ElevatedButton.styleFrom(fixedSize:const Size(200,50) ),
-                child: const Text('Tinder'),)
+              onPressed: () {
+                Navigator.of(context).pushNamed('/tinder');
+              },
+              style: ElevatedButton.styleFrom(fixedSize: const Size(300, 50)),
+              child: const Text('Atv 01 - Tinder'),
+            ),
+            const SizedBox(height: 20),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushNamed('/atv02');
+              },
+              style: ElevatedButton.styleFrom(fixedSize: const Size(300, 50)),
+              child: const Text('Atv 02 - Animation'),
+            )
           ],
         ),
       ),

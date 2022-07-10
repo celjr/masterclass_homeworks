@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 
+import '../page/atv02_page.dart';
 import '../page/home_page.dart';
 import '../page/money_control_page.dart';
 import '../page/tinder_page.dart';
@@ -20,7 +21,8 @@ class AppWidget extends StatelessWidget {
       routes: {
         '/': (context) =>const  HomePage(),
         '/tinder': (context) =>const  TinderPage(),
-        '/moneyControl': (context) =>const  MoneyControlPage(),  
+        '/moneyControl': (context) =>const  MoneyControlPage(), 
+        '/atv02': (context) =>const  Atv02Page(),  
       },
       initialRoute: '/',
     );
